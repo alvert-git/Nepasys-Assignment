@@ -1,16 +1,105 @@
-# React + Vite
+# NepaSys E-Commerce Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern, responsive e-commerce product catalog built with React, utilizing the dummyjson.com API for product data. It features infinite scrolling, advanced filtering, and a cart system managed by Redux.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Experience the application live here:
+[https://nepasys.vercel.app/](https://nepasys.vercel.app/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Product Filtering:** Search bar to filter products by name.
+*   **Category Selection:** Dropdown filter to browse products by category.
+*   **Infinite Scrolling:** Efficiently loads more products as the user scrolls down using the Intersection Observer API.
+*   **Sorting:** Sort products by price (ascending/descending).
+*   **State Management:** Shopping cart functionality implemented using **Redux Toolkit**.
+*   **Routing:** Seamless navigation between pages using **React Router DOM**.
+*   **Styling:** Clean, modern, and fully responsive design powered by **Tailwind CSS**.
+*   **API Integration:** Fetches real-time product data from the [dummyjson.com](https://dummyjson.com/) API.
+*   **Loading Experience:** Custom, smooth loading animations for a better user experience.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Frontend:** React
+*   **Styling:** Tailwind CSS
+*   **State Management:** Redux Toolkit
+*   **Routing:** React Router DOM
+*   **API:** Axios for fetching data from [dummyjson.com](https://dummyjson.com/)
+
+## Installation and Setup
+
+Follow these steps to get the development environment running on your local machine.
+
+### Prerequisites
+
+You need to have **Node.js** and **npm** (or **yarn**) installed on your system.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/alvert-git/Nepasys-Assignment/
+cd <your-project-folder>
+```
+
+### 2. Install dependencies
+
+Use your preferred package manager to install the necessary packages:
+
+```bash
+# Using npm
+npm install
+
+```
+
+### 3. Environment Variables
+
+This project uses environment variables to store the API base URL.
+
+Create a file named `.env` in the root directory of your project and add the following variable:
+
+```
+# .env file
+VITE_API_URL="https://dummyjson.com"
+```
+
+### 4. Run the application
+
+Start the development server:
+
+```bash
+# Using npm
+npm run dev
+
+```
+
+The application should now be running locally. Open your browser and navigate to the address shown in the console (usually `http://localhost:5173`).
+
+## Project Structure
+
+A typical structure for a React project of this nature might look like this:
+
+```
+├── .git/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/       # Images, fonts, and other static media
+│   ├── components/   # Reusable UI components (e.g., Filter, ProductCard)
+│   ├── pages/        # Route-specific components (e.g., ProductCatalog, CartView)
+│   ├── redux/        # Redux store setup and slices (e.g., cartSlice)
+│   ├── App.css       # Global application styles
+│   ├── App.jsx       # Main application component, often containing routing
+│   ├── index.css     # Tailwind imports and base styles
+│   └── main.jsx      # Entry point (renders App and wraps with Redux Provider)
+├── .env              # Environment variables
+├── .gitignore        # Files and folders to ignore in Git
+├── eslint.config.js
+├── index.html        # Main HTML file
+├── package-lock.json
+├── package.json      # Project dependencies and scripts
+├── README.md
+├── vercel.json       # Configuration for Vercel deployment
+└── vite.config.js    # Vite build configuration
+```
+
