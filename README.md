@@ -5,7 +5,7 @@ This is a modern, responsive e-commerce product catalog built with React, utiliz
 ## Live Demo
 
 Experience the application live here:
-[https://nepasys.vercel.app/](https://nepasys.vercel.app/)
+https://nepasys-assignment-zeta.vercel.app/
 
 ## Features
 
