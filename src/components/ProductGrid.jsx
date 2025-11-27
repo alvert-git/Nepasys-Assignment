@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, ShoppingCart, Heart } from "lucide-react";  
+import { Star, ShoppingCart, Heart } from "lucide-react"; 
 import { Link } from "react-router-dom";
 
 const ProductGrid = ({ products }) => {
