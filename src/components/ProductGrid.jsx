@@ -29,24 +29,6 @@ const ProductGrid = ({ products }) => {
                   alt={product.title}
                 />
 
-                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center space-x-3">
-                  <button
-                    className="p-3 bg-white/90 text-gray-700 rounded-full shadow-lg hover:bg-white transition duration-200 hover:text-red-500"
-                    title="Add to Wishlist"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Heart className="w-5 h-5" />
-                  </button>
-
-                  <button
-                    className="p-3 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition duration-200"
-                    title="Add to Cart"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ShoppingCart className="w-5 h-5" />
-                  </button>
-                </div>
-
                 <div className="absolute top-3 right-3 flex items-center bg-white/90 backdrop-blur-sm rounded-full pl-2 pr-3 py-1 text-sm font-medium shadow-md border border-gray-200">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500 mr-1" />
                   <span className="text-gray-800">
