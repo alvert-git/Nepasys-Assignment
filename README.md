@@ -102,4 +102,22 @@ A typical structure for a React project of this nature might look like this:
 ├── vercel.json       # Configuration for Vercel deployment
 └── vite.config.js    # Vite build configuration
 ```
+# Screenshots
+
+### Home Page
+<img width="2690" height="3690" alt="image" src="https://github.com/user-attachments/assets/69f5ab01-9251-4120-bd85-20164280c15a" />
+
+### Products Page with Infinite Scrolling
+<img width="1341" height="606" alt="image" src="https://github.com/user-attachments/assets/7cf00db2-5de2-41da-a2c1-a5521139aa89" />
+
+### Product Details
+<img width="1199" height="587" alt="image" src="https://github.com/user-attachments/assets/d37e974c-5d4e-4902-83ea-e02750c22a94" />
+
+### Cart
+<img width="384" height="607" alt="image" src="https://github.com/user-attachments/assets/9954835f-52f5-4006-b30c-f696d7a10c1d" />
+
+
+
+
+
 
