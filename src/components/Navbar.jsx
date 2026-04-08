@@ -26,7 +26,7 @@ const Navbar = () => {
             to="/" 
             className="text-white text-2xl font-bold"
           > 
-            Nepasys
+            Nepasys Assignment
           </Link>
           
 
@@ -39,8 +39,10 @@ const Navbar = () => {
               >
                 {item.name}
               </Link>
+              
             ))}
           </div>
+          
         </div>
 
 
